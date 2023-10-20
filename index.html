@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ArteSketch</title>
+    </head>
+    
+    <body>
+            <style>
+
+                div {
+                    width:1000px;
+                    background:#ff8000;
+                }
+                
+                h1 {color:rgb(28, 64, 131)}
+                h2 {color:rgb(61, 208, 247)}
+                body {background-color:rgb(198, 249, 199)} 
+                .Titulo-principal {background-color: rgba(61, 207, 247, 0.308);}
+                .Titulo-principal {font-size: 18px;}
+                .Introducción {font-size: 17px}
+                .Titulo-principal {font-size: 25px;}
+                #primera-casilla {background-color:rgb(73, 106, 200)}
+                #segunda-casilla {background-color:rgb(73, 106, 200)}
+                #primera-casilla-segunda-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-segunda-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-tercera-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-tercera-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-cuarta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-cuarta-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-quinta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-quinta-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-sexta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-sexta-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-septima-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-septima-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-octava-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-octava-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-novena-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-novena-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-decima-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-decima-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-undecima-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-undecima-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-duodecima-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-duodecima-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-decimotercera-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-decimotercera-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-decimocuarta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-decimocuarta-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-decimoquinta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-decimoquinta-fila {background-color:rgb(152, 168, 215)}
+                #primera-casilla-decimosexta-fila {background-color:rgb(118, 135, 187)}
+                #segunda-casilla-decimosexta-fila {background-color:rgb(152, 168, 215)}
+                
+                /*Ver que código sirve para resumir toda la información en un solo comando para dar color  a la tabla*/
+
+                nav {
+                background-color: #3fb48d; /* Color de fondo del menú */
+                width: 100%; /* Ancho del menú al 100% del contenedor */
+                height: 24px; /* Altura del menú */
+                float: left; /* Para que el menú ocupe todo el ancho disponible */
+                }
+            
+                nav ul {
+                font-size: 19px; /* Cambia el valor 16px al tamaño de fuente que desees */
+                list-style: none; /* Elimina los marcadores de lista */
+                padding: 0; /* Elimina el espacio interior de la lista */
+                margin: 0; /* Elimina el espacio exterior de la lista */
+                }
+            
+                nav li {
+                font-size: 19px; /* Cambia el valor 16px al tamaño de fuente que desees */
+                float: left; /* Coloca los elementos de lista en línea horizontal */
+                margin-right: 50x; /* Espacio entre elementos de la lista */
+                }
+            
+                nav a {
+                font-size: 19px; /* Cambia el valor 16px al tamaño de fuente que desees */
+                text-decoration: none; /* Elimina la subrayado de los enlaces */
+                color: white; /* Color del texto del enlace */
+                padding: 10px; /* Espacio interior del enlace */
+                }
+
+                a:hover {
+                    color: rgb(140, 228, 250); /* Cambiar color del texto al pasar el mouse */
+                }
+
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 5;
+                    padding: 0;
+                }
+
+                .btn {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .info-box {
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    padding: 15px;
+                    margin: 10px;
+                }
+
+                .btn-siguiente {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                 }
+
+                .btn-siguiente:hover {
+                    background-color: #0056b3;
+                }
+
+                /* Estilo para párrafos con la clase "importante" */
+                .importante {
+                    font-weight: bold;
+                    color: rgb(61, 208, 247)
+                }
+
+                /* Estilo para párrafos con el ID "destacado" */
+                #destacado {
+                    background-color: yellow;
+                    font-family:Cursive;
+                }             
+
+            </style>
+
+            <nav>
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Temas">Temas</a></li>
+                    <li><a href="#Fundamentos">Fundamentos</a></li>
+                    <li><a href="#Herramientas">Herramientas</a></li>
+                    <li><a href="#Observación">Observación</a></li>
+                    <li><a href="#Anatomía">Anatomía</a></li>
+                    <li><a href="#Color_y_Composición">Color y Composición</a></li>
+                    <li><a href="#Feedback">Feedback</a></li>
+                    <li><a href="#Tabla">Tabla</a></li>
+                </ul>
+            </nav>
+
+            <br>
+
+            <div class="highlight-header">
+                <h1>Bienvenido a nuestra página</h1>
+                <p>Explora nuestros servicios y contáctanos</p>
+            </div>
+
+            <div class="info-box">
+        
+                <h2 class="importante">Información importante</h2>
+                <p> <strong>¡Bienvenidos a la Página de Dibujo Creativo!</strong> <br>
+                
+                    <br>
+
+                    Si eres un amante del arte, la creatividad y la expresión visual, has llegado al lugar adecuado. Nuestra página de dibujo está diseñada para inspirarte y ayudarte a explorar tu talento artístico al máximo. <br>
+
+                    <br>
+                    
+                    <Strong>¿Qué Puedes Esperar Aquí?</Strong>
+                    
+                    <ul> 
+                    <li> <strong> Herramientas de Dibujo Avanzadas: </strong> Ofrecemos una amplia gama de herramientas de dibujo que te permitirán dar vida a tus ideas de manera digital. Desde lápices y pinceles hasta una paleta de colores vibrantes, tienes todo lo que necesitas al alcance de tu mano. </li>
+                    <li> <strong> Libertad Creativa: </strong> En esta página, no hay límites para tu creatividad. Puedes dibujar lo que desees, desde retratos realistas hasta paisajes abstractos, ¡el lienzo es tuyo!</li>
+                    <li> <strong> Comunidad Artística: </strong> Únete a una comunidad de artistas apasionados como tú. Comparte tus creaciones, obtén retroalimentación constructiva y descubre nuevas técnicas y estilos. </li>
+                    <li> <strong> Tutoriales y Recursos: </strong> Si eres nuevo en el mundo del dibujo digital, no te preocupes. Ofrecemos tutoriales paso a paso, consejos útiles y recursos para ayudarte a mejorar tus habilidades y conocimientos. </li>
+                    <li> <strong> Guarda y Comparte: </strong> Guarda tus obras maestras y compártelas con amigos y familiares. También puedes imprimir tus creaciones si lo deseas. </li>
+                    </ul>
+                    
+                    <strong>Cómo Empezar</strong>
+
+                    <br>
+                    
+                    <ol>
+                    <li>Regístrate o inicia sesión en nuestra página de dibujo.</li>
+                    <li>Explora las herramientas y funciones disponibles.</li>
+                    <li>¡Comienza a dibujar! No tengas miedo de experimentar y dejar volar tu imaginación.</li>
+                    <li>Conéctate con otros artistas y comparte tus creaciones en la comunidad.</li>
+                    </ol>
+
+                    <strong>¡Inspírate y Crea Arte Impresionante!</strong> <br>
+                    
+                    <br>
+
+                    En esta página, no importa si eres un principiante o un artista experimentado. Lo que realmente importa es tu pasión por el arte y tu deseo de expresarte. Así que, toma tu lápiz virtual, selecciona tus colores favoritos y ¡comencemos a dibujar!
+                </p>
+            </div>
+
+            <br>
+                
+            <button class="btn"><a href="Primer registro.html">¡Haz clic aquí!</a></button>
+
+            <br>
+
+            <article>
+                <header>
+                    <h1 class="Titulo-principal">Todo sobre el dibujo!!</h1>
+                <p>
+                    <section id="Temas">
+                    <h2 id="Titulo-secundario">Temas a tratar</h2>
+
+                    <ol id="Temas-a-ver">
+                        <li><a href="https://www.art-heim.com/blog/por-que-aprender-los-fundamentos-del-dibujo#:~:text=Entre%20los%20fundamentos%20del%20dibujo,dibujo%20excelente%2C%20bueno%20o%20malo.">Fundamentos Básicos</a></a></li>
+                        <li><a href="https://www.toulouselautrec.edu.pe/blogs/materiales-dibujo-principiantes">Herramientas y Materiales</a></a></li>
+                        <li><a href="https://arqdis.uniandes.edu.co/pregrado/arq/cursos/dibujo-de-observacion/#:~:text=El%20dibujo%20de%20observaci%C3%B3n%20implica,un%20nuevo%20objeto%3A%20el%20dibujo.">Observación y Práctica</a></a></li>
+                        <li><a href="https://www.ttamayo.com/2020/01/dibujar-la-figura-humana/">Anatomía y Figura Humana</a></a></li>
+                        <li><a href="https://design.tutsplus.com/es/articles/how-to-create-interesting-composition-in-drawing--cms-27402">Color y Composición</a></a></li>
+                        <li><a href="https://www.jobatus.mx/noticias/como-se-evalua-el-dibujo">Feedback y Autoevaluación</a></a></li>
+                    </ol> <!--Agregar un código para que al darle clic a algún tema, se vaya a la sección donde está la información referente-->
+                    </p>
+                    
+                    </section>
+                    
+                    <section id="Inicio">
+
+                    <h2 id="Primer-titulo">¿Qué es ArteSketch?</h2>
+                
+                    <p class="Introducción">ArteSketch es un sitio web vibrante y cautivador diseñado para enseñar a personas de todas las edades y niveles de habilidad cómo dibujar y expresar su creatividad a través del arte. <br>
+                
+                    <br>
+                
+                    Al ingresar a la página de inicio de ArteSketch, te reciben colores brillantes y diseños artísticos que inmediatamente despiertan tu interés. El sitio web está diseñado de manera intuitiva y fácil de navegar, lo que lo convierte en un recurso amigable tanto para principiantes como para aquellos que desean mejorar sus habilidades artísticas existentes. <br>
+                    <br>
+
+                    En resumen, ArteSketch es mucho más que un sitio web de tutoriales de dibujo. Es una comunidad en línea apasionante que nutre la creatividad, brinda recursos integrales y permite a las personas de todas partes del mundo explorar su amor por el arte y desarrollar sus habilidades de dibujo de manera divertida y educativa. </p>
+                    </p>
+                    </section>
+                </header>
+            </article>
+
+            <img src="Imagen 1.jpg" alt="" width="1273px" height="650px">
+
+            <section id="Fundamentos">
+
+            <h2 id="Primer-tema">Fundamentos Básicos</h2>
+
+            <p id="Segundo-parrafo">
+                <ul>
+                    <li><strong>Líneas y Contornos:</strong> Practica trazar líneas rectas, curvas y contornos para desarrollar precisión en tus trazos.</li>
+                    <li><strong>Formas Básicas:</strong> Aprende a dibujar círculos, cuadrados, triángulos y otras formas simples. Estas formas son la base para construir objetos más complejos.</li>
+                    <li><strong>Proporciones:</strong> Comprende las proporciones y las relaciones entre diferentes partes de un objeto. Esto te ayudará a dibujar con precisión.</li>
+                    <li><strong>Perspectiva:</strong> Estudia los principios básicos de la perspectiva para crear la ilusión de profundidad en tus dibujos.</li>
+                    <li><strong>Sombreado y Luces:</strong> Aprende a aplicar sombreado para dar volumen y dimensión a tus dibujos. Entender cómo la luz incide en los objetos es esencial.</li>
+                </ul>
+            </p>
+            
+            </section>
+
+            <section id="Herramientas">
+
+            <h2 id="Segundo-tema">Herramientas y Materiales:</h2>
+
+            <p id="Tercer-parrafo">
+                <ul>
+                    <li><strong>Lápices:</strong> Familiarízate con diferentes durezas de lápices para lograr trazos más suaves o más oscuros.</li>
+                    <li><strong>Papel:</strong> Experimenta con diferentes tipos de papel para encontrar el que se adapte mejor a tu estilo y técnica.</li>
+                    <li><strong>Borradores:</strong> Utiliza borradores de diferentes tipos (goma de borrar y amasable) para corregir errores y crear efectos.</li>
+                    <li><strong>Técnicas de Dibujo:</strong> Investiga sobre técnicas como el trazo cruzado, el difuminado y el punteado para agregar textura y profundidad.</li>
+                </ul>
+            </p>
+
+            </section>
+
+            <section id="Observación">
+
+            <h2 id="Tercer-tema">Observación y Práctica</h2>
+
+            <p id="Cuarto-parrafo">
+                <ul>
+                    <li><strong>Observación:</strong> Estudia objetos y escenas en la vida real. La observación detallada te ayudará a capturar mejor los detalles en tus dibujos.</li>
+                    <li><strong>Estudio de Referencias:</strong> Utiliza fotografías y referencias visuales para entender la anatomía y los detalles de lo que estás dibujando.</li>
+                    <li><strong>Dibujo Regular:</strong> La práctica constante es esencial para mejorar. Dedica tiempo regularmente a dibujar y experimentar con diferentes temas.</li>
+                </ul>
+            </p>
+
+            </section>
+
+            <section id="Anatomía">
+
+            <h2 id="Cuarto-tema">Anatomía y Figura Humana</h2>
+
+            <p id="Quinto-parrafo">
+                <ul>
+                    <li><strong>Proporciones del Cuerpo:</strong> Aprende las proporciones básicas del cuerpo humano para dibujar figuras más realistas.</li>
+                    <li><strong>Gestos y Posturas:</strong> Practica capturar la esencia de una figura a través de gestos y posturas, antes de agregar detalles.</li>
+                    <li><strong>Estudio de Rostros:</strong> Investiga la estructura facial, la colocación de los rasgos y cómo las expresiones afectan la apariencia general.</li>
+                </ul>
+            </p>
+
+            </section>
+
+            <section id="Color_y_Composición">
+
+            <h2 id="Quinto-tema">Color y Composición</h2>
+
+            <p id="Sexto-parrafo">
+                <ul>
+                    <li><strong>Teoría del Color:</strong> Comprende conceptos como el círculo cromático, la armonía de colores y cómo los colores interactúan entre sí.</li>
+                    <li><strong>Composición:</strong> Aprende sobre reglas como la regla de los tercios y la dirección visual para crear dibujos equilibrados y atractivos.</li>
+                </ul>
+            </p>
+
+            </section>
+
+            <section id="Feedback">
+
+            <h2 id="Sexto-tema">Feedback y Autoevaluación</h2>
+
+            <p id="Septimo-parrafo">
+                <ul>
+                    <li><strong>Solicita Feedback:</strong> Comparte tus dibujos con amigos, familiares o comunidades en línea para obtener retroalimentación constructiva.</li>
+                    <li><strong>Autoevaluación:</strong> Aprende a ser crítico contigo mismo. Compara tus dibujos con tus objetivos y busca áreas de mejora.</li>
+                </ul>
+            </p>
+
+            </section>
+        
+            <p id="destacado"><strong>Recuerda que el dibujo es un proceso de desarrollo continuo.</strong> Mantén la mente abierta, experimenta con diferentes técnicas y estilos, y disfruta del proceso de aprendizaje. <em>¡Buena suerte en tu viaje artístico!</em></p>
+            
+            </p>
+
+            <P>Aquí un pequeño resumen de lo que hemos visto:</P>
+
+            <section id="Tabla">
+            <table>
+                <table style="border-collapse: collapse; width: 100%;">
+                    <tr>
+                        <th id="primera-casilla" style="border: 1px solid black; padding: 8px;"><b>Paso</b></th>
+                        <th id="segunda-casilla" style="border: 1px solid black; padding: 8px;"><b>Descripción</b></th> 
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-segunda-fila" style ="border: 1px solid black; adding: 8px;"> 1</td>
+                        <td id="segunda-casilla-segunda-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Recopila Materiales</strong> - Reúne papel, lápices, borradores, y otras herramientas básicas de dibujo. Puedes empezar con materiales simples y luego invertir en mejores suministros a medida que progreses.</td> 
+                    </tr>
+                        <td id="primera-casilla-tercera-fila" style ="border: 1px solid black; adding: 8px;"> 2</td>
+                        <td id="segunda-casilla-tercera-fila" idstyle ="border: 1px solid black; adding: 8px;"> <strong>Observación</strong> - Comienza observando objetos, personas o fotografías detenidamente. La observación es fundamental para comprender las formas, proporciones y detalles.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-cuarta-fila" style ="border: 1px solid black; adding: 8px;"> 3</td>
+                        <td id="segunda-casilla-cuarta-fila"style ="border: 1px solid black; adding: 8px;"> <strong>Líneas Básicas</strong> - Practica trazar líneas básicas, como líneas rectas, curvas y círculos. Esto te ayudará a mejorar tu control del lápiz.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-quinta-fila" style ="border: 1px solid black; adding: 8px;"> 4</td>
+                        <td id="segunda-casilla-quinta-fila"style ="border: 1px solid black; adding: 8px;"> <strong>Dibujo de Contornos</strong> - Aprende a dibujar los contornos de objetos sin preocuparte por los detalles internos. Esto te ayudará a capturar la forma general.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-sexta-fila" style ="border: 1px solid black; adding: 8px;"> 5</td>
+                        <td id="segunda-casilla-sexta-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Proporciones</strong> - Dedica tiempo a entender y aplicar proporciones correctamente. Usa técnicas como el uso de líneas guía para dividir objetos en partes iguales.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-septima-fila" style ="border: 1px solid black; adding: 8px;"> 6</td>
+                        <td id="segunda-casilla-septima-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Sombreado</strong> - Practica el sombreado para agregar profundidad y realismo a tus dibujos. Experimenta con diferentes técnicas de sombreado, como el punteado y el difuminado.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-octava-fila" style ="border: 1px solid black; adding: 8px;"> 7</td>
+                        <td id="segunda-casilla-octava-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Perspectiva</strong> - Estudia la perspectiva para representar objetos en 3D. Aprende a dibujar líneas de horizonte, puntos de fuga y objetos en diferentes planos.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-novena-fila" style ="border: 1px solid black; adding: 8px;"> 8</td>
+                        <td id="segunda-casilla-novena-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Color (Opcional)</strong> - Si deseas trabajar con color, aprende sobre la teoría del color y cómo mezclar colores para lograr los tonos deseados.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-decima-fila"style ="border: 1px solid black; adding: 8px;"> 9</td>
+                        <td id="segunda-casilla-decima-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Practica Regularmente</strong> - El dibujo es una habilidad que mejora con la práctica constante. Dedica tiempo a dibujar todos los días o de manera regular.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-undecima-fila" style ="border: 1px solid black; adding: 8px;"> 10</td>
+                        <td id="segunda-casilla-undecima-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Recibe Retroalimentación</strong> - Comparte tus dibujos con otros artistas o en línea para recibir comentarios constructivos que te ayuden a mejorar.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-duodecima-fila" style ="border: 1px solid black; adding: 8px;"> 11</td>
+                        <td id="segunda-casilla-duodecima-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Inspírate</strong> - Busca inspiración en obras de artistas famosos y otros estilos de dibujo. La inspiración puede ayudarte a desarrollar tu propio estilo.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-decimotercera-fila" style ="border: 1px solid black; adding: 8px;"> 12</td>
+                        <td id="segunda-casilla-decimotercera-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Aprende Anatomía (Opcional) </strong> - Si te interesa el dibujo de personas u animales, estudia la anatomía para comprender mejor las estructuras del cuerpo.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-decimocuarta-fila" style ="border: 1px solid black; adding: 8px;"> 13</td>
+                        <td id="segunda-casilla-decimocuarta-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Mantén un Cuaderno de Dibujo</strong> - Lleva un cuaderno contigo para hacer bocetos y dibujos rápidos en cualquier momento. Esto te ayudará a practicar constantemente.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-decimoquinta-fila" style ="border: 1px solid black; adding: 8px;"> 14</td>
+                        <td id="segunda-casilla-decimoquinta-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Experimenta</strong> - No tengas miedo de experimentar con diferentes estilos, técnicas y medios. La experimentación puede llevar a descubrimientos creativos.</td>
+                    </tr>
+                    <tr>
+                        <td id="primera-casilla-decimosexta-fila" style ="border: 1px solid black; adding: 8px;"> 15</td>
+                        <td id="segunda-casilla-decimosexta-fila" style ="border: 1px solid black; adding: 8px;"> <strong>Persistencia</strong> - El dibujo puede ser desafiante, pero la persistencia es clave para mejorar. No te desanimes y sigue practicando.</td>
+                    </tr>
+                    <!--Ver cómo puedo resumir la información de la tablea para no dejar tan extenso el código-->
+            </table>
+            </section>
+            
+            <br>
+
+            <img src="Imagen 2.jpg" alt="" width="400px" height="250px">
+        
+            <aside>
+                <H3 id="Parrafo-final"> Autor</H3>
+                    <p>Este manual fue creado por Andrés Sebastián Ahumada García un estudiante apasionado por la programación. 
+                    Puedes escribirle un correo a <a href="https://www.google.com/intl/es-419/gmail/about/">shashan.aag@gmail.com</a>
+                    </p>
+            </aside>
+            <footer>Todos los derechos reservados - FOOTER</footer>
+    </body>
+</html>

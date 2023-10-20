@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ArteSketch</title>
+    </head>
+    <body>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center; /* Centra horizontalmente */
+                    align-items: center; /* Centra verticalmente */
+                    height: 100vh; /* Ocupa la altura completa del viewport */
+                }
+        
+                /* Estilo para el texto centrado */
+                .texto-centrado {
+                    text-align: center;
+                    font-size: 24px; /* Cambia el tamaño del texto a 24 píxeles */
+                }
+        
+                .btn {
+                    background-color: #007bff;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+        
+                .info-box {
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    padding: 15px;
+                    margin: 10px;
+                }
+
+                .Casillas label,
+                .Casillas input[type="text"] {
+                    width: 100px; /* Puedes ajustar el valor según tu preferencia */
+                }
+        
+                /* Añadir un margen entre las etiquetas y los campos de entrada */
+                .Casillas label {
+                    margin-right: 10px; /* Puedes ajustar el valor según tu preferencia */
+                }
+        
+                .Genero label,
+                .Genero input[type="text"] {
+                    width: 406px; /* Puedes ajustar el valor según tu preferencia */
+                }
+        
+                /* Añadir un margen entre las etiquetas y los campos de entrada */
+                .Genero label {
+                    margin-right: 10px; /* Puedes ajustar el valor según tu preferencia */
+                }
+            </style>
+      
+        <div class="texto-centrado">
+            <h2>Crea una cuenta de ArteSketch</h2>
+            <h3>Introduce tu nombre</h3>
+        
+            <form class="texto-centrado">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </form>
+        
+            <br>
+        
+            <form class="texto-centrado">
+                <label for="apellidos">Apellidos (Opcional):</label>
+                <input type="text" id="apellidos" name="apellidos">
+            </form>
+        
+            <br>
+                
+            <button class="btn"><a href="Segundo registro.html">Siguiente</a></button>
+        </div>
+    </body>
+</html>
+
+
